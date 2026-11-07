@@ -3,11 +3,12 @@
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "postCreateCommand": "npm install",
   "forwardPorts": [3000],
-  "portsAttributes": { "3000": { "label": "App", "onAutoForward": "openPreview" } },
-  "secrets": {
-    "TINYFISH_API_KEY": { "description": "Your TinyFish API key from agent.tinyfish.ai/api-keys" }
+  "portsAttributes": {
+    "3000": { "label": "App", "onAutoForward": "openPreview" }
   },
   "customizations": {
-    "vscode": { "extensions": ["GitHub.copilot", "GitHub.copilot-chat"] }
+    "vscode": {
+      "extensions": ["GitHub.copilot", "GitHub.copilot-chat"]
+    }
   }
 }
